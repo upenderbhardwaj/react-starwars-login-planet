@@ -1,16 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { App } from './components';
-import { ServiceWorker } from './utils';
-import Store from './store';
+import store from './stores';
+import StarWarsApp from './containers/StarWarsApp';
 import './index.css';
 
-const StoreInstance = Store();
-
-ReactDOM.render(
-  <Provider store={StoreInstance}><App /></Provider>,
-  document.getElementById('root'),
+const App = () => (
+  <Provider store={store}>
+  	<StarWarsApp />
+  </Provider>
 );
 
-ServiceWorker.register();
+render(<App />, document.getElementById('root'));

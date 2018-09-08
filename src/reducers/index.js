@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import films from './films';
-import planets from './planets';
+import { results } from './results';
+import { planet } from './planet';
+import { login } from './login';
 
-const rootReducer = combineReducers({
-  planets,
-  films,
+export default combineReducers({
+  results,
+  planet,
+  login
 });
-
-export default rootReducer;

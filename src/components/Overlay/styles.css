@@ -1,0 +1,64 @@
+.overlayBottomTop .overlayActive .dialogStyles {
+    top: 0;
+    background: url("./awesome_darth_vader.jpg") no-repeat left bottom;
+    background-size: cover;
+    transition-duration: 900ms;
+    overflow: auto;
+  }
+  .overlayBottomTop .dialogStyles {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: url("./awesome_darth_vader.jpg") no-repeat left bottom;
+    background-size: cover;
+    background-color: black;
+    height: 100%;
+    top: 100%;
+    transition-duration: 900ms;
+    z-index: 100;
+  }
+  .overlayBottomTop .dialogStyles .genericPolicy {
+    margin-top: -2rem;
+    padding: 3.2rem;
+  }
+  .overlayBottomTop .dialogStyles .genericPolicy .genericHeader {
+    margin: 1.6rem 4.6rem 2.8rem 0;
+  }
+  .overlayBottomTop .dialogStyles .genericPolicy .line {
+    margin-bottom: 2.4rem;
+  }
+  .overlayBottomTop .dialogStyles .genericPolicy .submitButton {
+    margin-top: 2.4rem;
+    text-align: center;
+  }
+  .overlayBottomTop .dialogStyles .genericPolicy .submitButton .button {
+    width: 100%;
+    max-width: 42rem;
+    min-width: auto;
+  }
+  .overlayBottomTop .closeButtonStyle {
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 3.2rem;
+    top: 1.8rem;
+    z-index: 100;
+    text-decoration: none;
+    border-radius: 50% / 10%;
+    background: black;
+    font-size: 2.1rem;
+    padding: 0 1rem;
+  }
+  .overlayBottomTop .closeButtonStyle:before {
+    background-color: black;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 13%/50%;
+    left: -7%;
+    top: 4%;
+    bottom: 4%;
+    right: -7%;
+  }
+  

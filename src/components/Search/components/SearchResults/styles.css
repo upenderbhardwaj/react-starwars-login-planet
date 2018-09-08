@@ -1,0 +1,41 @@
+.results-section {
+  display: flex;
+  justify-content: center;
+  height: 800px; 
+  font-size: 100%;
+  font-weight: 600;
+  letter-spacing: 4px;
+  line-height: 150%;
+}
+
+.results-section > ul {
+  position: relative;
+  max-width: 835px;
+  text-align: center;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.results-section > ul li {
+  padding: 5 0 100px 0;
+  cursor: pointer;
+}
+
+ul li{
+  list-style-type: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 650px) {
+  .results-section {
+    font-size: 208%;
+  }
+}
+
+@media (max-width: 445px) {
+  .results-section {
+    font-size: 165%;
+  }
+}

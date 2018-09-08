@@ -1,0 +1,27 @@
+.search-control {
+  min-width: 583px;
+  padding: 18px;
+  border: solid 3px white;
+  background-color: transparent;
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.search-control::placeholder {
+  color:white;
+  opacity: 0.5;
+}
+
+.search-control:focus {
+  -webkit-focus-ring-color: none;
+  outline: none;
+}
+
+@media (max-width: 745px) {
+  .search-control {
+    min-width: auto;
+    width: 80%;
+  }
+}

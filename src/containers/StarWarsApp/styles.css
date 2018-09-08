@@ -1,0 +1,11 @@
+.logout{
+  top: -189px;
+  padding: 10px;
+  position: relative;
+  margin-left: 1190px;
+  width: 200px;
+  color:white;
+  background-color: teal;  
+  border:1px solid gray;
+  border-radius: 8%/62%
+}

@@ -1,0 +1,30 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-container  > input, button {
+  width: 30%;
+  text-align: center;
+  line-height: 35px;
+  font-size: 30px;
+}
+
+.password-control{
+  margin-top:2px;
+  margin-bottom:9px;
+  border-radius: 8px;
+  border:1px solid gray;
+}
+
+.username-control{
+  border-radius: 8px;
+  border:1px solid gray;
+}
+
+.button-control{
+  border-radius: 8%/62%;
+  width:15%
+}
