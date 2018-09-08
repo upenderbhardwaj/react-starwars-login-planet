@@ -1,0 +1,28 @@
+.Header {
+  background: #000;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.Header__title {
+  color: #FFF;
+  font-weight: lighter;
+}
+
+.Header__description {
+  color: #DDD;
+}
+
+@media (min-width: 768px) {
+  .Header {
+    padding: 3em 0;
+  }
+
+  .Header__title {
+    font-size: 2em;
+  }
+
+  .Header__description {
+    font-size: 1em;
+  }
+}

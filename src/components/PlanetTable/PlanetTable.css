@@ -1,0 +1,87 @@
+.PlanetTable {
+  width: 100%;
+  border-bottom: 20px solid rgb(227, 232, 243);
+  border-collapse: collapse;
+  margin: 2em 0 0;
+}
+
+.PlanetTable__thead {
+  background: rgb(97, 187, 207);
+}
+
+.PlanetTable__row:nth-of-type(even) {
+  background: #EEE;
+}
+
+.PlanetTable__th {
+  color: #FFF;
+  font-size: .9em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  padding: .6em 1em;
+}
+
+.PlanetTable__th:first-of-type {
+  border-top-left-radius: 5px;
+}
+
+.PlanetTable__th:last-of-type {
+  border-top-right-radius: 5px;
+}
+
+.PlanetTable__row {
+  text-align: left;
+}
+
+.PlanetTable__td {
+  border: none;
+  font-size: .9em;
+  padding: .6em 1em;
+}
+
+@media (max-width: 768px) {
+  .PlanetTable, .PlanetTable__thead, .PlanetTable__tbody, .PlanetTable__th, .PlanetTable__td, .PlanetTable__tr, .PlanetTable__row {
+    display: block;
+  }
+  .PlanetTable__thead .PlanetTable__row {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .PlanetTable__td {
+    border: none;
+    border-bottom: 1px solid #EEE;
+    position: relative;
+    padding-left: 50%;
+  }
+  .PlanetTable__td:before {
+    position: absolute;
+    font-weight: bold;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .PlanetTable__td:nth-of-type(1):before {
+    content: "Name";
+  }
+  .PlanetTable__td:nth-of-type(2):before {
+    content: "Population";
+  }
+  .PlanetTable__td:nth-of-type(3):before {
+    content: "Diameter";
+  }
+  .PlanetTable__td:nth-of-type(4):before {
+    content: "Rotation Period";
+  }
+  .PlanetTable__td:nth-of-type(5):before {
+    content: "Orbital Period";
+  }
+  .PlanetTable__td:nth-of-type(6):before {
+    content: "Terrain";
+  }
+  .PlanetTable__td:nth-of-type(7):before {
+    content: "Films";
+  }
+}
